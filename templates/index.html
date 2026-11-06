@@ -1,0 +1,94 @@
+<div style="background:#2c3e50;padding:15px;">
+
+<a href="/" style="color:white;margin:15px;">Home</a>
+
+<a href="/analysis" style="color:white;margin:15px;">Analysis</a>
+
+<a href="/alerts" style="color:white;margin:15px;">Alerts</a>
+
+<a href="/graphs" style="color:white;margin:15px;">Graphs</a>
+
+<a href="/about" style="color:white;margin:15px;">About</a>
+
+</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Financial Risk Analysis Dashboard</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 30px;
+        }
+
+        h1{
+            color:#2c3e50;
+        }
+
+        .box{
+            display:inline-block;
+            background:#3498db;
+            color:white;
+            padding:20px;
+            margin:10px;
+            border-radius:10px;
+            width:220px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Financial Risk Analysis Dashboard</h1>
+
+<div class="box">
+    <h2>{{ total }}</h2>
+    <p>Total Transactions</p>
+</div>
+
+<div class="box">
+    <h2>{{ high_risk }}</h2>
+    <p>High Risk Transactions</p>
+</div>
+
+<div class="box">
+    <h2>{{ avg_amount }}</h2>
+    <p>Average Amount</p>
+</div>
+
+</body>
+</html>
+<div style="background:white;padding:20px;margin-top:20px;border-radius:10px;">
+
+<h2>Project Features</h2>
+
+<ul style="text-align:left;">
+<li>Transaction Validation</li>
+<li>Data Analysis using Pandas</li>
+<li>Fraud Risk Detection</li>
+<li>Risk Score Calculation</li>
+<li>Graph Generation using Matplotlib</li>
+<li>Flask Web Dashboard</li>
+</ul>
+
+</div>
+<div style="background:white;padding:20px;margin-top:20px;border-radius:10px;">
+
+<h2>Fraud Detection Rules</h2>
+
+<p>Amount > 30000 → Very High Risk</p>
+<p>Amount > 20000 → High Risk</p>
+<p>Amount > 10000 → Medium Risk</p>
+<p>Amount ≤ 10000 → Low Risk</p>
+
+</div>
+<div style="background:white;padding:20px;margin-top:20px;border-radius:10px;">
+
+<h2>Transaction Amount Distribution</h2>
+
+<img src="/static/transaction_graph.png" width="700">
+
+</div>
